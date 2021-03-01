@@ -36,8 +36,8 @@
       <h1>{{ site.title }}</h1>
       <p>{{ site.player_bio }}</p>
       <dl>
-        <dt>PDC Ranking</dt>
-        <dd>{{ site.pdc_rank }}</dd>
+        <dt>{{ site.league }} Ranking</dt>
+        <dd>{{ site.rank }}</dd>
         {% if site.next_event %}
           <dt>Next Event</dt>
           <dd>{{ site.next_event }}</dd>
@@ -61,36 +61,62 @@
       <footer class="sponsors">
         <h2>Sponsors</h2>
         {%- assign sponsors = site.sponsors -%}
-        {%- for sponsor in sponsors -%}
-        <p>{{ sponsor }}</p>
-        {%- endfor -%}
         <ul>
+        {%- for sponsor in sponsors -%}
           <li>
-            <a href="https://8-flight.jp?ref=dannybaggish.com"><img src="/assets/img/8-flight.jpg" alt="8 Flight" /></a>
+            <a href="{{ sponsor.url }}"><img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" /></a>
           </li>
-          <li>
-            <a href="https://www.target-darts.co.uk?ref=dannybaggish.com"><img src="/assets/img/target.jpg" alt="Target Darts" /></a>
-          </li>
-          <li>
-            <a href="https://floridacommercialcare.com?ref=dannybaggish.com"><img src="/assets/img/florida-commercial-care.png" alt="Florida Commercial Care" /></a>
-          </li>
+        {%- endfor -%}
         </ul>
       </footer>
 
       <footer class="links">
         <ul>
-          <li>
-            <a href="https://twitter.com/thebaggish"  class="fa fa-twitter">Twitter</a>
-          </li>
+          {%- if site.twitter -%}
+            <li>
+              <a href="{{ site.twitter }}"  class="fa fa-">Twitter</a>
+            </li>
+          {%- endif -%}
+          {%- if site.facebook -%}
+            <li>
+              <a href=""  class="fa fa-"></a>
+            </li>
+          {%- endif -%}
+          {%- if site.youtube -%}
+            <li>
+              <a href=""  class="fa fa-"></a>
+            </li>
+          {%- endif -%}
+          {%- if site.instagram -%}
+            <li>
+              <a href=""  class="fa fa-"></a>
+            </li>
+          {%- endif -%}
+          {%- if site. -%}
+            <li>
+              <a href=""  class="fa fa-"></a>
+            </li>
+          {%- endif -%}
+          
+          
+          
+          
+          twitter: https://twitter.com/mattlangan
+facebook: https://facebook.com/mattlangan
+youtube: https://youtube.com/cityleaguedarts
+instagram: https://instagram.com/cityleaguedarts
+
         </ul>
       </footer>
+<!--
       <footer class="site-home">
         <ul>
           <li>
-            <a href="https://dannybaggish.com" class="fa fa-link">DannyBaggish.com</a>
+            <a href="{{ site.url }}" class="fa fa-link">Site Homepage</a>
           </li>
         </ul>
       </footer>
+-->
     </main>
   </body>
 </html>
