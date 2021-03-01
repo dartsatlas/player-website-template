@@ -52,8 +52,17 @@
       <img src="/assets/img/spacer.png" alt="" aria-hidden=true style="background-image:url('/assets/img/{{ site.banner_image }}')" class="banner" />
 
       {%- if site.news -%}
-        <h1 class="fa fa-bullhorn">News!</h1>
+        <h1 class="fa fa-bullhorn" style="margin-top: 2em;">News!</h1>
         <div>{{ site.news }}</div>
+      {%- endif -%}
+
+      {%- if site.results -%}
+      <dl>
+      {%- for event in site.recent_results -%}
+      <dt>{{ event.name }}</dt>
+      <dd>{{ event.result }}</dd>
+      {%- endfor -%}
+      </dl>
       {%- endif -%}
       
       {{ content }}
