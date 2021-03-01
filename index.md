@@ -1,6 +1,6 @@
 <img src="/assets/img/spacer.png" alt="" aria-hidden=true style="background-image:url('/assets/img/banner.jpg')" class="banner" markdown=1 />
 
-# Baggish News!
+# News!
 {: .fa .fa-bullhorn}
 
 Danny has become the lone North American to win a two-year Tour Card during 2021 qSchool, and will be joining the PDC for the 2021 and 2022 seasons!

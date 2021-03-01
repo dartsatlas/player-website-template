@@ -11,7 +11,7 @@ hometown: Austin, Texas
 # Organization Information
 league: Quarantine League
 rank: 7
-next_event: qTour 5
+next_event: qTour 5 (March 11)
 results:
   -
     event: qTour 2
@@ -21,7 +21,7 @@ media_inquiries: media@dartsatlas.com
 business_inquiries: zapzapmeow@dartsatlas.com
 
 # Images
-header_image: assets/img/banner.jpg
+banner_image: assets/img/banner.jpg
 player_headshot: assets/img/headshot.png
 
 # Social Media Links
@@ -33,10 +33,10 @@ instagram: https://instagram.com/cityleaguedarts
 # Sponsors
 sponsors:
   -
-    name: Sponsor 1
-    image: sponsor_image.jpg
-    url: https://sponsorwebsite.com
+    name: Darts Atlas
+    image: assets/img/sponsors/darts-atlas.png
+    url: https://www.dartsatlas.com
   -
-    name: Sponsor 2
-    image: sponsor_image_2.jpg
-    url: https://sponsorwebsite2.com
+    name: City League Darts
+    image: assets/img/sponsors/sponsor_image_2.jpg
+    url: https://www.cityleaguedarts.com

@@ -1,18 +1,18 @@
 <!doctype html>
 <html>
   <head>
-    <title>Danny Baggish</title>
+    <title>{{ site.title }}</title>
     <meta charset="utf-8">
-    <meta name="description" content="The Gambler Danny Baggish"
-    <meta name="keywords" content="Darts, PDC, Professional Darts"
-    <meta property="og:title" content="DannyBaggish.com">
-    <meta property="og:description" content="Danny Baggish">
+    <meta name="description" content="{{ site.title }}"
+    <meta name="keywords" content="Darts, PDC, Professional Darts, {{ site.title }}"
+    <meta property="og:title" content="{{ site.url }}">
+    <meta property="og:description" content="{{ site.title }}">
 <!--
-    <meta property="og:image" content="https:/edgartv.com/assets/img/edgar.png">
-    <meta property="og:url" content="https://edgartv.com">
-    <meta name="twitter:title" content="EdgarTV.com">
-    <meta name="twitter:description" content="The [un]official website of The Prime Time Player, Matthew Edgar">
-    <meta name="twitter:image" content=" https://edgartv.com/assets/img/edgar.png">
+    <meta property="og:image" content="{{ site.player_headeshot }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.title }}">
+    <meta name="twitter:image" content=" {{ site.player_headshot }}">
 -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,7 +49,15 @@
       </dl>
     </header>
     <main>
+      <img src="/assets/img/spacer.png" alt="" aria-hidden=true style="background-image:url('{{ site.banner_image }}')" class="banner" />
+
+      {%- if site.news -%}
+        <h1 class="fa fa-bullhorn">News!</h1>
+        <div>{{ site.news }}</div>
+      {%- endif -%}
+      
       {{ content }}
+
       <footer class="sponsors">
         <h2>Sponsors</h2>
         <ul>
@@ -64,6 +72,7 @@
           </li>
         </ul>
       </footer>
+
       <footer class="links">
         <ul>
           <li>
