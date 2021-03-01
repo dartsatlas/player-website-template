@@ -6,7 +6,7 @@ $header-font: 'Play';
 
 $primary-color: #333;
 $accent-color: purple;
-$accent-color: #{{ site.theme_color }};
+$accent-color: $themeColor;
 
 .fa {
   font-family: $text-font !important;
