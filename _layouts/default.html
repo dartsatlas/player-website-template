@@ -52,12 +52,13 @@
       <img src="/assets/img/spacer.png" alt="" aria-hidden=true style="background-image:url('/assets/img/{{ site.banner_image }}')" class="banner" />
 
       {%- if site.news -%}
-        <h1 class="fa fa-bullhorn" style="margin-top: 2em;">News!</h1>
+        <h1 class="fa fa-bullhorn" style="margin-top: 1em;">News!</h1>
         <div>{{ site.news }}</div>
       {%- endif -%}
 
       {%- assign recent_results = site.recent_results -%}
       {%- if recent_results -%}
+      <h2>Latest Results</h2>
       <dl>
       {%- for event in recent_results -%}
       <dt>{{ event.name }}</dt>
