@@ -56,9 +56,10 @@
         <div>{{ site.news }}</div>
       {%- endif -%}
 
-      {%- if site.results -%}
+      {%- assign recent_results = site.recent_results -%}
+      {%- if recent_results -%}
       <dl>
-      {%- for event in site.recent_results -%}
+      {%- for event in recent_results -%}
       <dt>{{ event.name }}</dt>
       <dd>{{ event.result }}</dd>
       {%- endfor -%}
