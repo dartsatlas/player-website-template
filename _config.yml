@@ -21,22 +21,28 @@ media_inquiries: media@dartsatlas.com
 business_inquiries: zapzapmeow@dartsatlas.com
 
 # Images
-banner_image: assets/img/banner.jpg
-player_headshot: assets/img/headshot.png
+banner_image: banner.jpg
+player_headshot: headshot.png
 
 # Social Media Links
+# Make sure you include the "https://" prefix
 twitter: https://twitter.com/mattlangan
 facebook: https://facebook.com/mattlangan
 youtube: https://youtube.com/cityleaguedarts
 instagram: https://instagram.com/cityleaguedarts
 
 # Sponsors
+# Place the image in /assets/img/sponsors/
 sponsors:
   -
     name: Darts Atlas
-    image: assets/img/sponsors/darts-atlas.png
+    image: darts-atlas.png
     url: https://www.dartsatlas.com
   -
     name: City League Darts
-    image: assets/img/sponsors/sponsor_image_2.jpg
+    image: city-league.jpg
     url: https://www.cityleaguedarts.com
+  -
+    name: Weekly Dartscast
+    image: weekly-dartscast.jpg
+    url: https://www.weeklydartscast.com
