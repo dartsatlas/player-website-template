@@ -1,0 +1,83 @@
+body { 
+  font-family: $text-font;
+  line-height: 1.1;
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $header-font;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+p, table, blockquote, ul, ol, dl {
+  margin-bottom: .75em;
+}
+
+main {
+  > ul, > ol, > p, > dl, > table {
+    font-size: .9em;
+    margin-right: 1rem;
+  }
+  > ul, > ol {
+    padding: 0;
+    li {
+      padding: .25em 0;
+      margin: .25em 0 .25em 1em;
+    }
+  }
+  img {
+    max-height: 240px;
+  }
+
+  h2 {
+    border-top: 1px solid $accent-color;
+    margin-top: 1em;
+    padding-top: .5em;
+    margin-right: 1rem;
+  }
+}
+
+a,  a:visited, a:active, a:hover {
+  color: inherit;
+  color: $accent-color;
+  text-decoration: underline;
+
+  &.button {
+    display: inline-block;
+    padding: .5em 1em;
+    border-radius: .2em;
+    background-color: $accent-color;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 1px 1px #555;
+    line-height: 1;
+  }
+
+}
+
+table {
+  td, th {
+    border-bottom: 1px solid lighten($primary-color, 50%);
+    padding: .5em;
+  }
+  thead {
+    tr {
+      td, th {
+        background: lighten($primary-color, 70%);
+        border-top: 1px solid lighten($primary-color, 50%);
+      }
+    }
+  }
+}
+
+p.news {
+  background-color: lighten($accent-color, 50%);
+  border: 1px solid $accent-color;
+  margin: 0em 1em 1em 0;
+  padding: 1em;
+  line-height: 1.1;
+//   font-weight: bold;
+}

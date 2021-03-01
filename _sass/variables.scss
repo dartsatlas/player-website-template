@@ -1,0 +1,37 @@
+$text-font: 'Khula';
+$header-font: 'Play';
+
+$primary-color: #333;
+$accent-color: #2B4A4F;
+
+.fa {
+  font-family: $text-font !important;
+  &::before {
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    padding-right: .5em;
+  }
+  &.fa-twitter, &.fa-facebook, &.fa-youtube, &.fa-instagram {
+    &::before {
+      font-family: "Font Awesome 5 Brands";
+    }
+  }
+}
+
+/*
+  .login::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
+  }
+
+  .tps::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f1ea";
+  }
+
+  .twitter::before {
+    font-family: "Font Awesome 5 Brands"; content: "\f099";
+  }
+*/

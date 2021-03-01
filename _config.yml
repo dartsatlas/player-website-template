@@ -1,0 +1,31 @@
+title: "\"Player Nickname Here\" Player Name"
+url: https://dartsatlas.github.io/player-website-template
+sass:
+  sass_dir: _sass/
+player_bio: Player bio here
+next_event: Next Event Name (Next Event Date)
+results:
+  -
+    event: Most Recent Event
+    result: Result (i.e. Last 64)
+  -
+    event: Second-most recent event
+    result: Resuilt
+  -
+    event: Third-most recent event
+    result: Result
+news: The latest information can go here.
+media_inquiries: email@email.com
+business_inquiries: management@dannybaggish.com
+pdc_rank: 128
+header_image: assets/img/banner.jpg
+player_headshot: assets/img/headshot.png
+sponsors:
+  -
+    name: Sponsor 1
+    image: sponsor_image.jpg
+    url: https://sponsorwebsite.com
+  -
+    name: Sponsor 2
+    image: sponsor_image_2.jpg
+    url: https://sponsorwebsite2.com

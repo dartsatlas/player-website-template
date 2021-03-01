@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Danny Baggish</title>
+    <meta charset="utf-8">
+    <meta name="description" content="The Gambler Danny Baggish"
+    <meta name="keywords" content="Darts, PDC, Professional Darts"
+    <meta property="og:title" content="DannyBaggish.com">
+    <meta property="og:description" content="Danny Baggish">
+<!--
+    <meta property="og:image" content="https:/edgartv.com/assets/img/edgar.png">
+    <meta property="og:url" content="https://edgartv.com">
+    <meta name="twitter:title" content="EdgarTV.com">
+    <meta name="twitter:description" content="The [un]official website of The Prime Time Player, Matthew Edgar">
+    <meta name="twitter:image" content=" https://edgartv.com/assets/img/edgar.png">
+-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2579acd65e.js" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/5.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    {%- if site.google_analytics_id -%}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics_id }}');
+    </script>    
+    {%- endif -%}
+  </head>
+  <body>
+    <header>
+      <a href="{{ site.url }}"><img src="{{ site.player_headshot }}" /></a>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.player_bio }}</p>
+      <dl>
+        <dt>PDC Ranking</dt>
+        <dd>{{ site.pdc_rank }}</dd>
+        {% if site.next_event %}
+          <dt>Next Event</dt>
+          <dd>{{ site.next_event }}</dd>
+        {% endif %}
+        <dt>Media Inquiries</dt>
+        <dd><a href="mailto:{{site.media_inquiries}}">{{ site.media_inquiries }}</a></dd>
+        <dt>Business Inquiries</dt>
+        <dd><a href="mailto:{{site.business_inquiries}}">{{ site.business_inquiries }}</a></dd>
+      </dl>
+    </header>
+    <main>
+      {{ content }}
+      <footer class="sponsors">
+        <h2>Sponsors</h2>
+        <ul>
+          <li>
+            <a href="https://8-flight.jp?ref=dannybaggish.com"><img src="/assets/img/8-flight.jpg" alt="8 Flight" /></a>
+          </li>
+          <li>
+            <a href="https://www.target-darts.co.uk?ref=dannybaggish.com"><img src="/assets/img/target.jpg" alt="Target Darts" /></a>
+          </li>
+          <li>
+            <a href="https://floridacommercialcare.com?ref=dannybaggish.com"><img src="/assets/img/florida-commercial-care.png" alt="Florida Commercial Care" /></a>
+          </li>
+        </ul>
+      </footer>
+      <footer class="links">
+        <ul>
+          <li>
+            <a href="https://twitter.com/thebaggish"  class="fa fa-twitter">Twitter</a>
+          </li>
+        </ul>
+      </footer>
+      <footer class="site-home">
+        <ul>
+          <li>
+            <a href="https://dannybaggish.com" class="fa fa-link">DannyBaggish.com</a>
+          </li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+html {
+  background-color: $accent-color;
+  min-height: 100%;
+}
+body {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 0 80px #444;
+  min-height: 100%;
+}
+
+header, main {
+  display: block;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient($accent-color, white 30%);
+  padding: 1em;
+  margin-bottom: 2em;
+  img {
+    display: block;
+    margin: 0 auto;
+    
+  }
+  h1 {
+    margin: .5em 0;
+    text-align: center;
+  }
+  p, dl {
+    font-size: .9em;
+  }
+  dl {
+    dt {
+      font-weight: bold;
+      padding-bottom: .25em;
+    }
+  }
+}
+
+main {
+  padding-left: 1em;
+  img.banner {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+footer {
+  font-size: .8em;
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 1em;
+  }
+  &.sponsors {
+    ul li {
+      margin: .5em 1em .5em 0;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &.links, &.site-home {
+    border-top: 1px solid lighten($accent-color, 35%);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    ul {
+      justify-content: center;
+      li {
+        margin: .5em;
+        a {
+          display: inline-block;
+          background-color: lighten($accent-color, 50%);
+          border-radius: .1em;
+          text-decoration: none;
+          padding: .25em .5em;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+  header {
+    width: 100%;
+    border-bottom: 2px solid $accent-color;
+    img {
+      max-height: 150px;
+    }
+    p, dl {
+      text-align: center;
+    }
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    &.sponsors {}
+    ul {
+      justify-content: center;
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 801px) {
+  body {
+    flex-direction: row;
+  }
+  header {
+    width: 38%;
+    p, dl {
+      text-align: left;
+    }
+  }
+  main {
+    width: 62%;
+  }
+  footer {
+    &.sponsors {
+      ul {
+        justify-content: left;
+      }
+    }
+  }
+}
