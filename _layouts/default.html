@@ -60,6 +60,10 @@
 
       <footer class="sponsors">
         <h2>Sponsors</h2>
+        {%- assign sponsors = site.sponsors -%}
+        {%- foreach sponsor in sponsors -%}
+        <p>{{ sponsor }}</p>
+        {%- endfor -%}
         <ul>
           <li>
             <a href="https://8-flight.jp?ref=dannybaggish.com"><img src="/assets/img/8-flight.jpg" alt="8 Flight" /></a>
