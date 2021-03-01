@@ -74,7 +74,7 @@ table {
 }
 
 p.news {
-  background-color: lighten($accent-color, 50%);
+  background-color: rgba($accent-color, .5);
   border: 1px solid $accent-color;
   margin: 0em 1em 1em 0;
   padding: 1em;
