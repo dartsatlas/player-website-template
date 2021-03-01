@@ -20,7 +20,8 @@ news: Lazer Cat will be re-joining the Quarantine League for the Spring 2021 sea
 media_inquiries: media@dartsatlas.com
 business_inquiries: zapzapmeow@dartsatlas.com
 
-# Images
+# Branding
+theme_color: 1F5C23
 banner_image: banner.jpg
 player_headshot: headshot.png
 

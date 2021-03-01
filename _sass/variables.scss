@@ -1,8 +1,12 @@
+---
+---
+
 $text-font: 'Khula';
 $header-font: 'Play';
 
 $primary-color: #333;
-$accent-color: #2B4A4F;
+$accent-color: purple;
+$accent-color: #{{ site.theme_color }};
 
 .fa {
   font-family: $text-font !important;
