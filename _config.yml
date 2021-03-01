@@ -1,25 +1,36 @@
-title: "\"Player Nickname Here\" Player Name"
+# - - - - - - - - - Do not change these settings - - - - - - - - -"
+theme: 
 url: https://dartsatlas.github.io/player-website-template
 sass:
   sass_dir: _sass/
-player_bio: Player bio here
-next_event: Next Event Name (Next Event Date)
+# - - - - - - - - - You can edit below this line - - - - - - - - -"
+# Player Details
+title: "\"Lazer Cat\" Matt Langan"
+player_bio: Lazer Cat is a professional amateur darts player who throws and live streams from his laundry room in Austin, Texas.
+hometown: Austin, Texas
+# Organization Information
+league: Quarantine League
+rank: 7
+next_event: qTour 5
 results:
   -
-    event: Most Recent Event
-    result: Result (i.e. Last 64)
-  -
-    event: Second-most recent event
-    result: Resuilt
-  -
-    event: Third-most recent event
-    result: Result
-news: The latest information can go here.
-media_inquiries: email@email.com
-business_inquiries: management@dannybaggish.com
-pdc_rank: 128
+    event: qTour 2
+    result: Semi Final
+news: Lazer Cat will be re-joining the Quarantine League for the Spring 2021 season!
+media_inquiries: media@dartsatlas.com
+business_inquiries: zapzapmeow@dartsatlas.com
+
+# Images
 header_image: assets/img/banner.jpg
 player_headshot: assets/img/headshot.png
+
+# Social Media Links
+twitter: https://twitter.com/mattlangan
+facebook: https://facebook.com/mattlangan
+youtube: https://youtube.com/cityleaguedarts
+instagram: https://instagram.com/cityleaguedarts
+
+# Sponsors
 sponsors:
   -
     name: Sponsor 1
